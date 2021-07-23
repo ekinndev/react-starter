@@ -1,8 +1,8 @@
-FROM node:10.19-alpine3.11
+FROM node:alpine
 
 WORKDIR /app
 
-RUN apk add python make g++
+#RUN apk add python make g++
 
 COPY package.json package-lock.json ./
 
@@ -15,4 +15,4 @@ VOLUME [ "/app/public" ]
 
 EXPOSE 3001
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]

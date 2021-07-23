@@ -26,8 +26,6 @@ services:
       context: frontend
       dockerfile: dev.Dockerfile
     environment:
-      - HOST=0.0.0.0
-      - PORT=8080
       - CHOKIDAR_USEPOLLING=true #For to work hot reload in windows
     volumes:
       - ./frontend/src:/app/src
