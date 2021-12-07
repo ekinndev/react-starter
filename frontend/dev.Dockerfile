@@ -1,8 +1,8 @@
-FROM node:alpine
+FROM node:16.13-alpine3.11
 
 WORKDIR /app
 
-#RUN apk add python make g++
+RUN apk add python make g++
 
 COPY package.json package-lock.json ./
 
