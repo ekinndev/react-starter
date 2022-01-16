@@ -12,8 +12,9 @@ function App() {
         <p>{t('hello')}</p>
         <button onClick={() => i18n.changeLanguage('tr')}>Toggle</button>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save for to reload.
         </p>
+        <p>asas</p>
         <a className={styles['App-link']} href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>

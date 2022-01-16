@@ -6,7 +6,8 @@ import './i18n';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './store/store';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
@@ -21,14 +22,10 @@ ReactDOM.render(
             </li>
           </ul>
 
-          <Switch>
-            <Route path="/about">
-              <div>This is about pag2e</div>
-            </Route>
-            <Route path="/">
-              <App />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/about" element={<div>This is about pag2e</div>} />
+            <Route path="/" element={<App />} />
+          </Routes>
         </div>
       </Router>
     </Provider>
